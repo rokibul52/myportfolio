@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 50px;
+    width: 80px;
+    background-image: url('weblogo.png');
+    background-size: cover;
+    padding-right: 6px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #EAE0CF;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar ul{
+    list-style-type: none;
+    
+}
+
+.navbar{
+    background-color: #111844;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0px;
+}
+.menubar{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.mode{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-right: 50px;
+}
+.btn{
+    width: 90px;
+    border-radius: 5px;
+    
+}
+.day{
+    background-color: #EAE0CF;
+    color: #111844;
+}
+.night{
+    background-color: #111844;
+    color: #EAE0CF;
+    
+}
+.logo:hover{
+    border: 1.5px solid white;
+}
+.navbar a:hover{
+    border: 1.5px solid white;
+    color: #4B5694;
+}
+.btn:hover, .btn3:hover, .p-btn:hover{
+    border: 1.5px solid white;
+    
+}
+main{
+    text-align: justify;
+    
+    
+    
+}
+body{
+    min-height: 100vh;
+    background-color: #4B5694;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.Intro{
+    color: #111844;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-autospace: ;
+}
+.hi{
+    color: #EAE0CF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.profile-image{
+    height: 350px;
+    width: 350px;
+    background-image: url("profile.jpeg");
+    background-size: cover;
+    border-radius: 30px;
+    border-style: dashed;
+    
+}
+.main-intro{
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 70px;
+    margin-top: 60px;
+    
+    
+}
+.main-intro2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left:  50px;
+    max-width: 40%;
+}
+.intro-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.btn3,.p-btn{
+    width: auto;
+    border: 1px solid transparent;
+    background-color: #7288AE;
+    cursor: pointer;
+    border-radius: 5px;
+    
+    
+}
+.btn3 a,.p-btn a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+@media (max-width: 768px) {
+    .main-intro {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .main-intro2 {
+        padding-left: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+.project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+.p-start{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.start1,.start3{
+    color: #EAE0CF;
+}
+.start2, .start4{
+    color: #111844;
+}
+.all-project{
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.each-project{
+    background-color:#4B5694CC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: 250px;
+    max-width: 1000px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.each-project h6{
+    color: #EAE0CF;
+    width: 200px;
+    margin: 10px;
+    font-size: 10px;
+    font-family: cursive;
+    
+}
+.p{
+    cursor: pointer;
+    width: 225px;
+    height: 240px;
+    border-radius: 10px;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+}
+.p:hover{
+    border-color: #ffffff;
+    transform: scale(1.03);
+}
+.p-img1{
+    background-image: url("web.jpg");
+}
+.p-img2{
+    background-image: url("app.jpg");
+}
+.p-img3{
+    background-image: url("resalehub.jpg");
+}
+.p-type{
+    color: #111844;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+}
+.p-btn{
+    margin-bottom: 10px;
+}
+.skill-intro{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.skill-container{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    
+}
+.each-skill{
+    background-color: #4B5694CC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    display: flex;
+    border: 2px solid transparent;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease ;
+}
+.each-skill:hover{
+    border-color: #ffffff;
+    transform: scale(1.03);
+}
+.each-skill h6{
+    text-align: center;
+}
+.each-skill i{
+    font-size: 50px;
+    color: orange;
+    margin: 10px;
+}
+.each-skill h6{
+    color: #EAE0CF;
+    width: 150px;
+    margin: 10px;
+    font-size: 10px;
+    font-family: cursive;
+}
+.section-divider {
+    width: 60%;              
+    max-width: 800px;         
+    border: none;             
+    height: 2px;              
+    background: linear-gradient(to right, transparent, #EAE0CF, transparent);
+    margin: 100px auto;       
+    opacity: 0.6;             
+}
+footer{
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: 40px 0px 0px ;
+}
